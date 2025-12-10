@@ -33,6 +33,12 @@ target_include_directories(DayThree
     /home/ci-mingtaol-linux/dev/CPlusPlus-AoC-2025/Utils
 )
 
+add_executable(DayFour)
+
+target_sources(DayFour
+    PRIVATE
+        day4/main.cpp)
+
 
 # install(FILES "day1/input.txt"
 # DESTINATION "build/${AdvantOfCode}")
