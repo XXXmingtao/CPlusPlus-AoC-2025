@@ -39,6 +39,12 @@ target_sources(DayFour
     PRIVATE
         day4/main.cpp)
 
+add_executable(DayFive)
+
+target_sources(DayFive
+    PRIVATE
+        day5/main.cpp)
+
 
 # install(FILES "day1/input.txt"
 # DESTINATION "build/${AdvantOfCode}")
