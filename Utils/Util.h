@@ -16,6 +16,27 @@ struct Edge
     Edge(int dest, int wight) : destination(dest), weight(wight) {}
 };
 
+std::vector<std::string> split(
+    const std::string &ids, const std::string &delimiter)
+{
+    std::vector<std::string> output;
+    size_t start = 0;
+    size_t end = ids.find(delimiter);
+
+    // spilt with delimiter
+    while (end != std::string::npos)
+    {
+        output.push_back(ids.substr(start, end - start));
+        start = end + delimiter.length();
+        end = ids.find(delimiter, start);
+    }
+
+    output.push_back(ids.substr(start));
+
+    return output;
+}
+
+
 class weightedDirectedGraph
 {
 public:

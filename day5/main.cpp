@@ -4,25 +4,25 @@
 #include <utility>
 #include <vector>
 
-std::vector<std::string> split(
-    const std::string &ids, const std::string &delimiter)
-{
-    std::vector<std::string> freshIds;
-    size_t start = 0;
-    size_t end = ids.find(delimiter);
+// std::vector<std::string> split(
+//     const std::string &ids, const std::string &delimiter)
+// {
+//     std::vector<std::string> freshIds;
+//     size_t start = 0;
+//     size_t end = ids.find(delimiter);
 
-    // spilt with delimiter
-    while (end != std::string::npos)
-    {
-        freshIds.push_back(ids.substr(start, end - start));
-        start = end + delimiter.length();
-        end = ids.find(delimiter, start);
-    }
+//     // spilt with delimiter
+//     while (end != std::string::npos)
+//     {
+//         freshIds.push_back(ids.substr(start, end - start));
+//         start = end + delimiter.length();
+//         end = ids.find(delimiter, start);
+//     }
 
-    freshIds.push_back(ids.substr(start));
+//     freshIds.push_back(ids.substr(start));
 
-    return freshIds;
-}
+//     return freshIds;
+// }
 
 int main()
 {

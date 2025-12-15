@@ -3,6 +3,7 @@
 
 #include "LinkedList.h"
 #include <iostream>
+#include <vector>
 
 template <typename T>
 LinkedList<T>::LinkedList() : head(nullptr), tail(nullptr) {}
